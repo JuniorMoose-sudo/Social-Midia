@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media — Clientes pelo Instagram</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="theme-luxury">
+
+  <!-- FLOAT WPP -->
+  <div class="float-wpp">
+    <div class="float-wpp-bubble">Falar agora →</div>
+    <a href="#" class="float-wpp-btn" id="wppFloat">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+    <div class="hero-content">
+      <div class="hero-left">
+        <div class="hero-badge"><span></span> Gestão estratégica de Instagram</div>
+        <h1>Seu Instagram gerando <em>clientes reais</em> em até 60 dias</h1>
+        <p>Estratégia, conteúdo e gestão completa para negócios que querem crescer de verdade — não apenas acumular
+          seguidores.</p>
+        <div class="hero-cta">
+          <a href="#quiz" class="btn-primary">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 5l7 7-7 7" />
+            </svg>
+            Quero meu diagnóstico grátis
+          </a>
+          <a href="#resultados" class="btn-secondary">Ver resultados reais ↓</a>
+          <div class="hero-urgency">
+            <svg width="14" height="14" fill="none" stroke="#D6AE62" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+            Apenas <strong>3 vagas disponíveis</strong> para <span id="urgencyMonth">este mês</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="stats-card">
+          <div class="stats-card-title">Resultados reais</div>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-num" data-count="120">0</div>
+              <div class="stat-label">Clientes atendidos</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-count="3">0</div>
+              <div class="stat-label">Mi de alcance gerado</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-count="230">0</div>
+              <div class="stat-label">% crescimento médio</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num" data-count="60">0</div>
+              <div class="stat-label">Dias p/ resultado</div>
+            </div>
+          </div>
+          <div class="vacancy-bar">
+            <div class="vacancy-label">
+              <span id="vacancyMonthYear">Vagas deste mês</span>
+              <strong>5/8 ocupadas</strong>
+            </div>
+            <div class="vacancy-track">
+              <div class="vacancy-fill" id="vacFill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="problema">
+    <div class="container">
+      <div class="section-label">O problema</div>
+      <h2 class="section-title">Você posta. Mas não vende.</h2>
+      <p class="section-sub">Isso não é falta de esforço. É falta de estratégia. Veja se você se identifica:</p>
+      <div class="problema-grid">
+        <div class="problema-card">
+          <div class="problema-icon">😩</div>
+          <h4>Posta todo dia e não vê retorno</h4>
+          <p>Conteúdo sem estratégia é só entretenimento. Seu Instagram precisa trabalhar como um vendedor, não como um
+            álbum de fotos.</p>
+        </div>
+        <div class="problema-card">
+          <div class="problema-icon">📉</div>
+          <h4>Seguidores que não viram clientes</h4>
+          <p>Ter 10 mil seguidores sem vender nada é pior que ter 500 seguidores certos. O que importa é audiência
+            qualificada.</p>
+        </div>
+        <div class="problema-card">
+          <div class="problema-icon">⏰</div>
+          <h4>Sem tempo pra criar conteúdo</h4>
+          <p>Você é especialista no seu negócio, não em Instagram. Delegar a gestão libera seu tempo para o que gera
+            resultado.</p>
+        </div>
+        <div class="problema-card">
+          <div class="problema-icon">🎯</div>
+          <h4>Não sabe o que funciona de verdade</h4>
+          <p>Trend de hoje, algoritmo de amanhã. Sem método testado, você fica sempre correndo atrás e nunca na frente.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO -->
+  <section class="solucao">
+    <div class="container">
+      <div class="section-label">A solução</div>
+      <h2 class="section-title">Gestão completa, estratégia focada em vendas</h2>
+      <p class="section-sub">Não é só postar bonito. É transformar seu Instagram num canal de aquisição de clientes.</p>
+      <div class="solucao-grid">
+        <div class="solucao-card">
+          <div class="solucao-num">01</div>
+          <h4>Planejamento estratégico</h4>
+          <p>Calendário mensal, temas, formatos e objetivos alinhados com sua meta de vendas.</p>
+        </div>
+        <div class="solucao-card">
+          <div class="solucao-num">02</div>
+          <h4>Criação de conteúdo</h4>
+          <p>Posts, reels, stories e legendas feitos para engajar o público certo e gerar ação.</p>
+        </div>
+        <div class="solucao-card">
+          <div class="solucao-num">03</div>
+          <h4>Estratégia de crescimento</h4>
+          <p>Técnicas orgânicas de alcance, hashtags, colabs e conteúdos virais para seu nicho.</p>
+        </div>
+        <div class="solucao-card">
+          <div class="solucao-num">04</div>
+          <h4>Relatórios e ajustes</h4>
+          <p>Análise mensal de métricas reais com foco em conversão — não em vaidade.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS -->
+  <section class="resultados" id="resultados">
+    <div class="container">
+      <div class="section-label section-label-highlight">Prova real</div>
+      <h2 class="section-title">Números que falam por si</h2>
+      <p class="section-sub">Resultados de clientes reais em nichos variados, com estratégia aplicada nos primeiros 60
+        dias.</p>
+      <div class="results-grid">
+        <div class="result-card">
+          <div class="result-num" data-count="230">0%</div>
+          <div class="result-label">Crescimento médio de seguidores qualificados em 60 dias</div>
+        </div>
+        <div class="result-card">
+          <div class="result-num" data-count="47">0</div>
+          <div class="result-label">Novos clientes gerados para uma clínica estética em 90 dias</div>
+        </div>
+        <div class="result-card">
+          <div class="result-num" data-count="3">0M</div>
+          <div class="result-label">De alcance orgânico gerado nos últimos 12 meses</div>
+        </div>
+        <div class="result-card">
+          <div class="result-num" data-count="8">0x</div>
+          <div class="result-label">ROI médio relatado por clientes com faturamento rastreável</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos">
+    <div class="container">
+      <div class="section-label">Depoimentos</div>
+      <h2 class="section-title">Quem já transformou o Instagram</h2>
+      <p class="section-sub">Não é promessa. São pessoas reais que viram resultado.</p>
+      <div class="dep-grid">
+        <div class="dep-card">
+          <div class="dep-stars">★★★★★</div>
+          <p class="dep-text">"Em 45 dias meu salão passou de 2 clientes por semana vindos do Instagram para 11. Nunca
+            imaginei que conteúdo poderia fazer isso."</p>
+          <div class="dep-author">
+            <div class="dep-avatar avatar-mr">MR</div>
+            <div>
+              <div class="dep-name">Mariana Rocha</div>
+              <div class="dep-role">Dona de salão, São Paulo</div>
+            </div>
+          </div>
+          <div class="dep-result">+450% de agendamentos pelo Instagram</div>
+        </div>
+        <div class="dep-card">
+          <div class="dep-stars">★★★★★</div>
+          <p class="dep-text">"Minha clínica cresceu 3x em pacientes novos. O Instagram virou minha principal fonte de
+            indicação — superou até o boca a boca."</p>
+          <div class="dep-author">
+            <div class="dep-avatar avatar-cf">Dr. CF</div>
+            <div>
+              <div class="dep-name">Dr. Carlos Figueiredo</div>
+              <div class="dep-role">Dentista, Recife</div>
+            </div>
+          </div>
+          <div class="dep-result">+190% em consultas em 60 dias</div>
+        </div>
+        <div class="dep-card">
+          <div class="dep-stars">★★★★★</div>
+          <p class="dep-text">"Eu postava todo dia e não vendia nada. Em um mês com estratégia certa, fechei 6 contratos
+            pelo direct. Simplesmente absurdo."</p>
+          <div class="dep-author">
+            <div class="dep-avatar avatar-jp">JP</div>
+            <div>
+              <div class="dep-name">Juliana Prado</div>
+              <div class="dep-role">Coach de carreira, Curitiba</div>
+            </div>
+          </div>
+          <div class="dep-result">6 contratos fechados no 1º mês</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULADORA ROI -->
+  <section class="calculadora">
+    <div class="container">
+      <div class="section-label">Simulador</div>
+      <h2 class="section-title">Quanto valem novos clientes para você?</h2>
+      <p class="section-sub">Descubra o potencial de retorno antes mesmo de começar.</p>
+      <div class="calc-wrapper">
+        <div class="calc-row">
+          <label class="calc-label">Qual o ticket médio do seu produto ou serviço? (R$)</label>
+          <input type="number" class="calc-input" id="calcTicket" value="500" min="50" placeholder="Ex: 500">
+        </div>
+        <div class="calc-row">
+          <label class="calc-label">Quantos clientes novos por mês você quer? <strong
+              id="calcQtdLabel">5</strong></label>
+          <input type="range" min="1" max="30" value="5" id="calcQtd">
+        </div>
+        <div class="calc-result">
+          <div class="calc-result-label">Receita adicional mensal estimada</div>
+          <div class="calc-result-num" id="calcNum">R$ 2.500</div>
+          <div class="calc-result-sub">= <span id="calcQtdResult">5</span> novos clientes × R$ <span
+              id="calcTicketResult">500</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="quiz-section" id="quiz">
+    <div class="container">
+      <div class="quiz-header">
+        <div class="section-label">Diagnóstico inteligente</div>
+        <h2 class="section-title">Descubra o nível real do seu Instagram</h2>
+        <p class="section-sub">4 perguntas.
+          Análise personalizada. Diagnóstico do seu caso específico.</p>
+      </div>
+      <div class="quiz-wrapper">
+
+        <!-- STEP 0: NOME -->
+        <div class="quiz-card" id="stepNome">
+          <div class="quiz-step-label">Antes de começar</div>
+          <div class="quiz-q">Como você se chama?</div>
+          <div class="quiz-hint">Seu diagnóstico será personalizado com seu nome</div>
+          <input type="text" class="quiz-name-input" id="inputNome" placeholder="Seu primeiro nome..." maxlength="30">
+          <div class="quiz-nav quiz-nav-start">
+            <span></span>
+            <button class="quiz-next" id="btnNome" disabled>Começar diagnóstico →</button>
+          </div>
+        </div>
+
+        <!-- QUIZ PRINCIPAL -->
+        <div id="quizMain" style="display:none;">
+          <div class="quiz-progress-wrap">
+            <div class="quiz-progress-bar">
+              <div class="quiz-progress-fill" id="progressFill"></div>
+            </div>
+            <div class="quiz-progress-text" id="progressText">Pergunta 1 de 4</div>
+          </div>
+          <div class="quiz-card">
+
+            <!-- Q1: NICHO -->
+            <div class="quiz-step active" id="q1">
+              <div class="quiz-step-label">Pergunta 1</div>
+              <div class="quiz-q" id="q1title">Qual é o seu segmento?</div>
+              <div class="quiz-hint">Isso define a estratégia ideal para o seu caso</div>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-step="q1" data-score='{"potencial":3,"maturidade":1}'
+                  data-label="Saúde e Estética" data-val="Saúde e Estética (clínica, salão, estética)">💊 Saúde e
+                  Estética</button>
+                <button class="quiz-opt" data-step="q1" data-score='{"potencial":2,"maturidade":1}'
+                  data-label="Alimentação" data-val="Alimentação (restaurante, delivery, confeitaria)">🍽️
+                  Alimentação</button>
+                <button class="quiz-opt" data-step="q1" data-score='{"potencial":2,"maturidade":2}'
+                  data-label="Serviços profissionais" data-val="Serviços profissionais (coach, consultor, advogado)">💼
+                  Serviços profissionais</button>
+                <button class="quiz-opt" data-step="q1" data-score='{"potencial":3,"maturidade":1}'
+                  data-label="Comércio e varejo" data-val="Comércio e varejo (loja física ou e-commerce)">🛍️ Comércio e
+                  varejo</button>
+                <button class="quiz-opt" data-step="q1" data-score='{"potencial":2,"maturidade":1}'
+                  data-label="Outro segmento" data-val="Outro segmento">📦 Outro segmento</button>
+              </div>
+              <div class="quiz-nav">
+                <span></span>
+                <button class="quiz-next" id="nextQ1" disabled>Próximo →</button>
+              </div>
+            </div>
+
+            <!-- Q2: SITUAÇÃO -->
+            <div class="quiz-step" id="q2">
+              <div class="quiz-step-label">Pergunta 2</div>
+              <div class="quiz-q" id="q2title">Qual é sua situação atual?</div>
+              <div class="quiz-hint">Seja honesto — isso é o que define o diagnóstico real</div>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-step="q2" data-score='{"maturidade":1,"urgencia":3}'
+                  data-label="Não tenho estratégia" data-val="Não tenho estratégia, posto quando lembro">😅 Não tenho
+                  estratégia nenhuma</button>
+                <button class="quiz-opt" data-step="q2" data-score='{"maturidade":2,"urgencia":3}'
+                  data-label="Posto mas não vendo" data-val="Posto com frequência mas não consigo vender">📱 Posto, mas
+                  não consigo vender</button>
+                <button class="quiz-opt" data-step="q2" data-score='{"maturidade":3,"urgencia":2}'
+                  data-label="Crescimento travado" data-val="Já tive resultados mas o crescimento travou">📊 Crescia,
+                  mas travou</button>
+                <button class="quiz-opt" data-step="q2" data-score='{"maturidade":1,"urgencia":2}'
+                  data-label="Começando do zero" data-val="Estou começando do zero agora">🌱 Começando do zero</button>
+              </div>
+              <div class="quiz-nav">
+                <button class="quiz-back" id="backQ2">← Voltar</button>
+                <button class="quiz-next" id="nextQ2" disabled>Próximo →</button>
+              </div>
+            </div>
+
+            <!-- Q3: FREQUÊNCIA -->
+            <div class="quiz-step" id="q3">
+              <div class="quiz-step-label">Pergunta 3</div>
+              <div class="quiz-q" id="q3title">Com que frequência você posta?</div>
+              <div class="quiz-hint">Pense nos últimos 30 dias</div>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-step="q3" data-score='{"maturidade":1,"urgencia":3}'
+                  data-label="Raramente" data-val="Raramente, menos de 1x por semana">😬 Raramente (menos de
+                  1x/semana)</button>
+                <button class="quiz-opt" data-step="q3" data-score='{"maturidade":2,"urgencia":2}' data-label="Às vezes"
+                  data-val="Às vezes, 2 a 3x por semana">🙂 Às vezes (2–3x por semana)</button>
+                <button class="quiz-opt" data-step="q3" data-score='{"maturidade":3,"urgencia":1}'
+                  data-label="Com frequência" data-val="Com frequência, quase todo dia">✅ Com frequência (quase todo
+                  dia)</button>
+                <button class="quiz-opt" data-step="q3" data-score='{"maturidade":3,"urgencia":1}' data-label="Todo dia"
+                  data-val="Todo dia, com consistência">🔥 Todo dia, com consistência</button>
+              </div>
+              <div class="quiz-nav">
+                <button class="quiz-back" id="backQ3">← Voltar</button>
+                <button class="quiz-next" id="nextQ3" disabled>Próximo →</button>
+              </div>
+            </div>
+
+            <!-- Q4: OBJETIVO -->
+            <div class="quiz-step" id="q4">
+              <div class="quiz-step-label">Pergunta 4</div>
+              <div class="quiz-q" id="q4title">O que você mais quer com o Instagram?</div>
+              <div class="quiz-hint">Escolha o objetivo principal</div>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-step="q4" data-score='{"urgencia":3,"potencial":2}'
+                  data-label="Gerar clientes" data-val="Gerar mais clientes e aumentar o faturamento">💰 Gerar mais
+                  clientes direto pelo Instagram</button>
+                <button class="quiz-opt" data-step="q4" data-score='{"urgencia":1,"potencial":3}'
+                  data-label="Crescer audiência" data-val="Crescer seguidores qualificados no nicho">📈 Crescer
+                  audiência qualificada</button>
+                <button class="quiz-opt" data-step="q4" data-score='{"urgencia":2,"potencial":2}'
+                  data-label="Construir autoridade" data-val="Construir autoridade e ser referência no nicho">🏆 Me
+                  tornar referência no nicho</button>
+                <button class="quiz-opt" data-step="q4" data-score='{"urgencia":1,"potencial":1}'
+                  data-label="Presença profissional" data-val="Ter presença digital profissional">✨ Ter um perfil mais
+                  profissional</button>
+              </div>
+              <div class="quiz-nav">
+                <button class="quiz-back" id="backQ4">← Voltar</button>
+                <button class="quiz-next" id="nextQ4" disabled>Ver meu diagnóstico →</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- LOADING / ANÁLISE -->
+        <div id="quizLoading" style="display:none;">
+          <div class="quiz-card quiz-loading-card">
+            <div class="loading-icon">
+              <div class="loading-ring"></div>
+              <div class="loading-inner">📊</div>
+            </div>
+            <div class="loading-msg" id="loadingMsg">Analisando seu perfil...</div>
+            <div class="loading-steps" id="loadingSteps">
+              <div class="loading-step" id="ls1">⏳ Analisando seu nicho e segmento...</div>
+              <div class="loading-step" id="ls2">⏳ Comparando com outros perfis similares...</div>
+              <div class="loading-step" id="ls3">⏳ Identificando gargalos principais...</div>
+              <div class="loading-step" id="ls4">⏳ Gerando diagnóstico personalizado...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESULTADO -->
+        <div id="quizResultado" style="display:none;">
+          <div class="quiz-card result-card-full">
+
+            <!-- SCORE VISUAL -->
+            <div class="result-score-section">
+              <div class="result-name-greeting" id="resultGreeting"></div>
+              <div class="result-score-wrap">
+                <svg class="score-ring" viewBox="0 0 120 120">
+                  <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="10" />
+                  <circle cx="60" cy="60" r="50" fill="none" stroke="url(#scoreGrad)" stroke-width="10"
+                    stroke-linecap="round" stroke-dasharray="314" stroke-dashoffset="314" id="scoreCircle"
+                    transform="rotate(-90 60 60)" />
+                  <defs>
+                    <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#C86E8A" />
+                      <stop offset="100%" stop-color="#D892A8" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="score-inner">
+                  <div class="score-num" id="scoreNum">0</div>
+                  <div class="score-label">/ 100</div>
+                </div>
+              </div>
+              <div class="result-nivel-badge" id="nivelBadge">—</div>
+              <div class="result-comparacao" id="resultComparacao"></div>
+            </div>
+
+            <!-- DIAGNÓSTICO -->
+            <div class="result-diag-block">
+              <div class="result-diag-titulo" id="diagTitulo"></div>
+              <div class="result-diag-msg" id="diagMensagem"></div>
+            </div>
+
+            <!-- MÉTRICAS -->
+            <div class="result-metrics" id="resultMetrics"></div>
+
+            <!-- OPORTUNIDADE -->
+            <div class="result-opp" id="resultOpp"></div>
+
+            <!-- CTA -->
+            <div class="result-cta-block">
+              <div class="result-cta-title">O próximo passo ideal é uma análise mais profunda</div>
+              <div class="result-cta-sub">Seu diagnóstico completo já vai junto na mensagem — sem precisar explicar
+                nada.</div>
+              <a class="wpp-btn" id="wppQuizBtn" href="#">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+                Quero minha análise completa grátis
+              </a>
+              <div class="wpp-note">Resposta em até 2h • Sem compromisso</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-photo">
+          <div class="sobre-photo-placeholder">
+            <div class="icon">👤</div>
+            <p>Sua foto aqui</p>
+          </div>
+        </div>
+        <div class="sobre-content">
+          <div class="section-label">Quem está por trás</div>
+          <h2 class="section-title">Estratégia baseada em resultado, não em like</h2>
+          <p>Há mais de 4 anos ajudando negócios locais e profissionais a transformarem seu Instagram em canal de
+            vendas. Não acredito em fórmula mágica — acredito em diagnóstico honesto, estratégia personalizada e
+            execução consistente.</p>
+          <p>Já gerenciei perfis em mais de 12 nichos diferentes, de clínicas médicas a restaurantes, e uma coisa é
+            certa: todo negócio tem potencial no digital. A diferença está em quem guia o caminho.</p>
+          <div class="sobre-stats">
+            <div class="sobre-stat"><strong>+120</strong><span>Clientes atendidos</span></div>
+            <div class="sobre-stat"><strong>4+</strong><span>Anos de experiência</span></div>
+            <div class="sobre-stat"><strong>12</strong><span>Nichos atendidos</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NICHOS -->
+  <section class="nichos">
+    <div class="container">
+      <div class="section-label">Atendo</div>
+      <h2 class="section-title">Negócios de vários segmentos</h2>
+      <div class="nichos-grid">
+        <span class="nicho-tag">💊 Clínicas e Saúde</span>
+        <span class="nicho-tag">✂️ Salões e Beleza</span>
+        <span class="nicho-tag">🍽️ Restaurantes</span>
+        <span class="nicho-tag">🛍️ Lojas e E-commerce</span>
+        <span class="nicho-tag">🏋️ Academias e Personal</span>
+        <span class="nicho-tag">⚖️ Advogados</span>
+        <span class="nicho-tag">🏠 Imobiliárias</span>
+        <span class="nicho-tag">📚 Cursos e Infoprodutos</span>
+        <span class="nicho-tag">🔧 Serviços domésticos</span>
+        <span class="nicho-tag">🎂 Confeitarias</span>
+        <span class="nicho-tag">💼 Consultores</span>
+        <span class="nicho-tag">🌿 Produtos naturais</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section class="diferenciais">
+    <div class="container">
+      <div class="section-label">Por que escolher</div>
+      <h2 class="section-title">O que me diferencia</h2>
+      <div class="diferenciais-grid">
+        <div class="dif-card">
+          <div class="dif-icon">🎯</div>
+          <h4>Foco em vendas, não em vaidade</h4>
+          <p>Métricas que importam: clientes gerados, conversões e faturamento. Não só curtidas.</p>
+        </div>
+        <div class="dif-card">
+          <div class="dif-icon">🔬</div>
+          <h4>Diagnóstico antes da estratégia</h4>
+          <p>Cada cliente recebe uma análise completa do perfil antes de qualquer ação.</p>
+        </div>
+        <div class="dif-card">
+          <div class="dif-icon">📊</div>
+          <h4>Relatórios mensais reais</h4>
+          <p>Transparência total com dados, evolução e ajustes baseados em resultado.</p>
+        </div>
+        <div class="dif-card">
+          <div class="dif-icon">🤝</div>
+          <h4>Atendimento direto e personalizado</h4>
+          <p>Sem terceirização. Você fala direto com quem executa a estratégia do seu perfil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESCASSEZ -->
+  <section class="escassez">
+    <div class="container escassez-center">
+      <div class="section-label">Atenção</div>
+      <h2>Vagas limitadas por design</h2>
+      <p>Atendo poucos clientes por mês para garantir qualidade e atenção real a cada negócio.</p>
+      <div class="vagas-display">
+        <div class="vagas-num">3</div>
+        <div class="vagas-text">
+          <strong>vagas disponíveis</strong>
+          <span id="vacancyStartMonthYear">para início neste mês</span>
+        </div>
+      </div>
+      <div class="vagas-dots">
+        <div class="vaga-dot taken"></div>
+        <div class="vaga-dot taken"></div>
+        <div class="vaga-dot taken"></div>
+        <div class="vaga-dot taken"></div>
+        <div class="vaga-dot taken"></div>
+        <div class="vaga-dot available"></div>
+        <div class="vaga-dot available"></div>
+        <div class="vaga-dot available"></div>
+      </div>
+      <a href="#" class="btn-primary btn-escassez" id="wppEscassez">
+        Garantir minha vaga agora
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="container">
+      <h2>Pronto para transformar seu Instagram em <em>máquina de clientes?</em></h2>
+      <p>Diagnóstico gratuito. Sem compromisso. Resposta em até 2h.</p>
+      <a href="#" class="wpp-btn wpp-btn-final"
+        id="wppFinal">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="white">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        Falar no WhatsApp agora
+      </a>
+      <p class="cta-final-note">Seu diagnóstico chega junto com a
+        mensagem — sem precisar explicar nada.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="footerYear">2026</span> Social Media Estratégico • Feito com foco em resultado</p>
+  </footer>
+
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
+
+
+
